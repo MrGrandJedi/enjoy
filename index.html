@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enjoy - Digital Abstract Art</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Animated Background Shapes -->
+    <div class="bg-shapes">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <h1 class="logo">ENJOY</h1>
+      <p class="tagline">Digital Abstract Art Gallery</p>
+    </header>
+
+    <!-- Enhanced Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <span class="nav-logo">ENJOY</span>
+        </div>
+        <div class="nav-menu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#gallery" class="nav-link">Gallery</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#artists" class="nav-link">Artists</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Gallery Section -->
+      <section id="gallery" class="gallery">
+        <div class="art-piece fade-in">
+          <div class="art-canvas pattern1"></div>
+          <h3 class="art-title">Geometric Harmony</h3>
+          <p class="art-description">
+            A vibrant exploration of geometric patterns with warm gradients that
+            dance across the canvas.
+          </p>
+        </div>
+
+        <div class="art-piece fade-in">
+          <div class="art-canvas pattern2"></div>
+          <h3 class="art-title">Ocean Waves</h3>
+          <p class="art-description">
+            Cool blue tones intersect with diagonal lines, creating a sense of
+            flowing water and movement.
+          </p>
+        </div>
+
+        <div class="art-piece fade-in">
+          <div class="art-canvas pattern3"></div>
+          <h3 class="art-title">Pink Dreams</h3>
+          <p class="art-description">
+            Soft pink and purple gradients blend seamlessly in this dreamy
+            abstract composition.
+          </p>
+        </div>
+
+        <div class="art-piece fade-in">
+          <div class="art-canvas pattern4"></div>
+          <h3 class="art-title">Cosmic Dots</h3>
+          <p class="art-description">
+            Deep purple space dotted with stars, representing the infinite
+            possibilities of digital art.
+          </p>
+        </div>
+
+        <div class="art-piece fade-in">
+          <div class="art-canvas pattern5"></div>
+          <h3 class="art-title">Color Wheel</h3>
+          <p class="art-description">
+            A dynamic conic gradient that showcases the full spectrum of colors
+            in perfect harmony.
+          </p>
+        </div>
+
+        <div class="art-piece fade-in">
+          <div class="art-canvas pattern6"></div>
+          <h3 class="art-title">Angular Blue</h3>
+          <p class="art-description">
+            Sharp geometric cuts meet smooth gradients in this modern
+            interpretation of digital landscapes.
+          </p>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about fade-in">
+        <h2>About Enjoy</h2>
+        <p>
+          Welcome to Enjoy, where digital abstract art comes alive through
+          vibrant colors, geometric patterns, and flowing gradients. Our gallery
+          showcases the beauty of modern digital artistry, exploring the
+          intersection of technology and creativity. Each piece is carefully
+          crafted to evoke emotion and inspire wonder through the power of
+          abstract expression.
+        </p>
+      </section>
+    </main>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3 class="footer-title">ENJOY</h3>
+          <p class="footer-description">
+            Discover the beauty of digital abstract art through vibrant colors,
+            geometric patterns, and innovative design.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Pinterest</a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-subtitle">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#artists">Featured Artists</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-subtitle">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="#">Abstract Art</a></li>
+            <li><a href="#">Digital Paintings</a></li>
+            <li><a href="#">Geometric Designs</a></li>
+            <li><a href="#">Color Studies</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-subtitle">Newsletter</h4>
+          <p class="newsletter-text">
+            Subscribe to get updates on new artworks
+          </p>
+          <div class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="newsletter-input"
+            />
+            <button class="newsletter-btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-container">
+          <p>&copy; 2024 Enjoy Digital Art Gallery. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Scroll Animation
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".fade-in").forEach((el) => {
+        observer.observe(el);
+      });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll("nav a").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute("href");
+          const targetSection = document.querySelector(targetId);
+          if (targetSection) {
+            targetSection.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Mobile Menu Toggle
+      const navToggle = document.querySelector(".nav-toggle");
+      const navMenu = document.querySelector(".nav-menu");
+
+      navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("active");
+        });
+      });
+
+      // Newsletter form functionality
+      document
+        .querySelector(".newsletter-btn")
+        .addEventListener("click", (e) => {
+          e.preventDefault();
+          const email = document.querySelector(".newsletter-input").value;
+          if (email) {
+            alert(
+              "Thank you for subscribing! We'll keep you updated with our latest artworks."
+            );
+            document.querySelector(".newsletter-input").value = "";
+          } else {
+            alert("Please enter a valid email address.");
+          }
+        });
+    </script>
+  </body>
+</html>
